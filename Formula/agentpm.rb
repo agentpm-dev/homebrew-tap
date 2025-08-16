@@ -1,23 +1,23 @@
 class Agentpm < Formula
   desc "AgentPM CLI"
   homepage "https://github.com/agentpm-dev/cli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/agentpm-dev/cli/releases/download/v0.1.0/agentpm-aarch64-apple-darwin.tar.gz"
-      sha256 "f54d957ca4808460e5f11f1aa67423e70a1f51986d42f46ba081c09097d21924"
+      url "https://github.com/agentpm-dev/cli/releases/download/v0.1.1/agentpm-aarch64-apple-darwin.tar.gz"
+      sha256 "99c732f1c37552b96b5817ddf799aaedd4e8bef460eabca603b11a75f436f7d5"
     else
-      url "https://github.com/agentpm-dev/cli/releases/download/v0.1.0/agentpm-x86_64-apple-darwin.tar.gz"
-      sha256 "95c958b1eee645722eecdf971ad66accaef0e60d13d632793ab97746b471ae97"
+      url "https://github.com/agentpm-dev/cli/releases/download/v0.1.1/agentpm-x86_64-apple-darwin.tar.gz"
+      sha256 "4cb0833061c568315ef0685c9e5002243e1e871fc2b38b2c13c6775b298d78d1"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/agentpm-dev/cli/releases/download/v0.1.0/agentpm-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7fe1eebe60bbcd65884cf5c9a42100cada131872b3067d555af6ba280da24fe7"
+      url "https://github.com/agentpm-dev/cli/releases/download/v0.1.1/agentpm-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2873153e5db2e8a518269abaa99fefb9e289ab82cb9a71091460e7b774578681"
     else
       odie "Unsupported architecture"
     end
